@@ -1,0 +1,27 @@
+<html>
+<html>
+<head>
+  <title>Module 4</title>
+</head>
+<body>
+  <h1>Module 4</h1>
+
+  <label for="name-input">Enter your name:</label>
+  <input type="text" id="name-input">
+  <button onclick="greet()">Submit</button>
+  
+  
+  <script>
+    function greet() {
+      const name = document.getElementById('name-input').value;
+      const greetingElement = document.getElementById('greeting');
+        
+        if (name.charAt(0) === 'j' || name.charAt(0) === 'J') {
+        console.log(`Goodbye, J${name}`);
+        } else {
+        console.log(`Goodbye, ${name}`);
+        }
+    }
+  </script>
+</body>
+</html>
